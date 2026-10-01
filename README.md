@@ -1,51 +1,68 @@
 # ruijsit.nl
 
-Website van Ruijs IT. Plain HTML, CSS en JavaScript — geen build-stap, geen frameworks. Draait op GitHub Pages.
+Website of Ruijs IT. Plain HTML, CSS and JavaScript: no build step, no frameworks. Built to run on GitHub Pages.
 
-## Structuur
+## Structure
 
 ```
-index.html                         One-pager: hero, diensten, over ons, contact
-diensten/3cx-voip-support.html     Detailpagina 3CX & VoIP-support (met FAQ)
-diensten/pbx-manager.html          Detailpagina PBX Manager
-diensten/talkdesk.html             Detailpagina Talkdesk
-diensten/jambonz.html              Detailpagina Jambonz
-diensten/flowfuse-node-red.html    Detailpagina FlowFuse & Node-RED
-assets/css/style.css               Alle styling (kleuren als variabelen bovenaan)
-assets/js/main.js                  Taalwissel, mobiel menu, screenshot-tabs
-assets/js/i18n.js                  Engelse vertalingen
-assets/img/, assets/logo/          Afbeeldingen en logo
+index.html                         One-page site: hero, services, about, contact
+diensten/3cx-voip-support.html     Service page: 3CX & VoIP support (with FAQ)
+diensten/pbx-manager.html          Service page: PBX Manager
+diensten/talkdesk.html             Service page: Talkdesk
+diensten/jambonz.html              Service page: Jambonz
+diensten/flowfuse-node-red.html    Service page: FlowFuse & Node-RED
+assets/css/style.css               All styling (colours and sizes as variables at the top)
+assets/js/main.js                  Language switch, mobile menu, screenshot tabs
+assets/js/i18n.js                  English translations
+assets/img/, assets/logo/          Images and logo (og-image.jpg = social sharing preview)
+404.html                           "Page not found" page (served by GitHub Pages)
+robots.txt, sitemap.xml            For search engines
 ```
 
-## Teksten aanpassen (NL/EN)
+## Editing text (Dutch/English)
 
-- **Nederlands** staat direct in de HTML.
-- **Engels** staat in `assets/js/i18n.js`, gekoppeld via het `data-i18n="sleutel"` attribuut op het element.
-- Attributen (alt-tekst, links, meta description) werken hetzelfde via `data-i18n-alt`, `data-i18n-href`, `data-i18n-content`, enz.
-- Nieuwe tekst toevoegen: zet `data-i18n="nieuwe.sleutel"` op het element en voeg `"nieuwe.sleutel": "English text"` toe in `i18n.js`.
+- **Dutch** is the default language and lives directly in the HTML.
+- **English** lives in `assets/js/i18n.js`, linked to an element through its `data-i18n="key"` attribute.
+- Attributes (alt text, links, meta description) work the same way via `data-i18n-alt`, `data-i18n-href`, `data-i18n-content`, etc.
+- To add new text: put `data-i18n="new.key"` on the element and add `"new.key": "English text"` to `i18n.js`.
 
-De gekozen taal wordt onthouden in de browser. Een link met `?lang=en` opent de site direct in het Engels.
+The chosen language is remembered in the visitor's browser. A link with `?lang=en` opens the site in English directly.
 
-## Nieuwe dienst toevoegen
+## Adding a service
 
-1. Kopieer een bestaande pagina in `diensten/` en pas de inhoud aan.
-2. Voeg een kaart toe in de sectie `#diensten` in `index.html`.
-3. Voeg de Engelse teksten toe in `i18n.js`.
+1. Copy an existing page in `diensten/` and change its content.
+2. Update the `<head>`: title, description, canonical URL, `og:` tags and the JSON-LD block.
+3. Add a card to the `#diensten` section in `index.html`.
+4. Add the page to the footer links on every page and to `sitemap.xml`.
+5. Add the English texts to `i18n.js`.
 
-Header en footer staan op elke pagina; pas ze bij een wijziging op alle pagina's aan.
+The header and footer are repeated on every page; when you change them, update all pages.
 
-## Lokaal bekijken
+## SEO
+
+Every page has:
+
+- a unique `<title>` and meta description (Dutch, with English in `i18n.js`);
+- a canonical URL on `https://ruijsit.nl/`;
+- Open Graph and Twitter tags for link previews, using `assets/img/og-image.jpg`;
+- structured data (JSON-LD): the company (`ProfessionalService`) on the homepage, `Service` or `SoftwareApplication` plus a breadcrumb on each service page, and `FAQPage` on the 3CX & VoIP support page.
+
+Search engines index the Dutch version. The English version is a language switch on the same URL, so it isn't indexed separately.
+
+After going live, submit `https://ruijsit.nl/sitemap.xml` in Google Search Console and Bing Webmaster Tools. When you change a page, update its `<lastmod>` date in `sitemap.xml`.
+
+## Previewing locally
 
 ```
 python3 -m http.server 8000
 ```
 
-Open daarna http://localhost:8000.
+Then open http://localhost:8000.
 
-## Live zetten op ruijsit.nl
+## Going live on ruijsit.nl
 
-Het domein wijst nu nog naar de oude server. Om het via GitHub Pages te laten lopen:
+To serve the site from GitHub Pages on the ruijsit.nl domain:
 
-1. Zet in de repo-instellingen GitHub Pages aan (branch `main`, map `/`).
-2. Stel bij *Custom domain* `ruijsit.nl` in (GitHub maakt dan een `CNAME`-bestand aan).
-3. Zet de DNS-records van `ruijsit.nl` om naar GitHub Pages en vink *Enforce HTTPS* aan.
+1. Enable GitHub Pages in the repository settings (branch `main`, folder `/`).
+2. Set *Custom domain* to `ruijsit.nl` (GitHub then creates a `CNAME` file).
+3. Point the DNS records of `ruijsit.nl` to GitHub Pages and tick *Enforce HTTPS*.

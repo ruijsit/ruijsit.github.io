@@ -476,7 +476,7 @@ a:hover { color: var(--text); }
     center / 14px no-repeat;
 }
 
-/* "In het kort" facts box */
+/* Facts box ("At a glance") */
 
 .facts {
   padding: 22px;
@@ -599,5 +599,7 @@ a:hover { color: var(--text); }
 }
 
 .footer-inner p { margin: 0; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.footer-links a { text-decoration: none; }
 .footer-inner a { color: var(--text-on-dark-muted); }
 .footer-inner a:hover { color: var(--orange); }

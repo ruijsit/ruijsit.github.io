@@ -28,9 +28,15 @@ window.RUIJSIT_EN = {
   "svc.channels": "Channels",
   "svc.integrations": "Integrations",
 
+  /* ---------- 404 ---------- */
+  "notfound.pageTitle": "Page not found — Ruijs IT",
+  "notfound.title": "Page not found",
+  "notfound.lead": "The page you are looking for does not exist (anymore).",
+  "notfound.home": "Go to the homepage",
+
   /* ---------- Home ---------- */
-  "home.title": "Ruijs IT — Your engineer for business telephony",
-  "home.meta": "Ruijs IT helps businesses with VoIP and business telephony: 3CX, Talkdesk, Jambonz, Node-RED and FlowFuse.",
+  "home.title": "Ruijs IT — 3CX and VoIP specialist for business telephony",
+  "home.meta": "Ruijs IT from Vlaardingen helps businesses and 3CX resellers with VoIP and business telephony: 3CX support, PBX Manager, Talkdesk, Jambonz and Node-RED/FlowFuse.",
 
   "hero.title": "Your engineer for <span class=\"accent\">business telephony</span>",
   "hero.lead": "Ruijs IT specialises in advice, implementation and management of VoIP systems. We take care of finding the right solution, so you don't have to worry about the underlying technology.",
@@ -61,7 +67,8 @@ window.RUIJSIT_EN = {
   "company.vat": "VAT",
 
   /* ---------- PBX Manager ---------- */
-  "pbx.meta": "PBX Manager: manage and monitor all your 3CX servers from a single overview.",
+  "pbx.meta": "PBX Manager is a self-hosted app to manage and monitor all your 3CX servers from one place, with alerts and configuration templates. In development.",
+  "pbx.pageTitle": "PBX Manager: manage and monitor your 3CX servers — Ruijs IT",
   "pbx.status": "In development",
   "pbx.lead": "An app to manage and monitor all your 3CX servers from one place, self-hosted in your own infrastructure.",
   "pbx.intro": "PBX Manager is an app we are developing to manage and monitor all your 3CX servers. No more separate logins and overviews, just one central place.",
@@ -86,7 +93,8 @@ window.RUIJSIT_EN = {
   "pbx.ctaMailHref": "mailto:support@ruijsit.nl?subject=Interested%20in%20PBX%20Manager",
 
   /* ---------- Talkdesk ---------- */
-  "talkdesk.meta": "Talkdesk: AI-powered cloud contact centre. Ruijs IT helps with advice, setup, integrations and management.",
+  "talkdesk.meta": "Setting up and integrating Talkdesk: call flows, IVR, routing, SIP and CRM integrations such as Salesforce, Zendesk and HubSpot. Advice and support by Ruijs IT.",
+  "talkdesk.pageTitle": "Talkdesk configuration and support — Ruijs IT",
   "talkdesk.lead": "An AI-powered cloud contact centre for customer contact across voice and digital channels.",
   "talkdesk.p1": "Talkdesk is a cloud platform for contact centres. Customer contact via phone, chat, SMS and email comes together in one place, and AI helps both your customers and your agents. Because everything runs in the cloud, you need no hardware of your own and the platform grows with you.",
   "talkdesk.p2": "We help you set up Talkdesk so it fits your organisation, your telephony and the systems you already use.",
@@ -109,7 +117,8 @@ window.RUIJSIT_EN = {
   "talkdesk.ctaMailHref": "mailto:support@ruijsit.nl?subject=Question%20about%20Talkdesk",
 
   /* ---------- Jambonz ---------- */
-  "jambonz.meta": "Jambonz: open source platform for telephony and voice AI. Ruijs IT helps with installation, SIP integrations and voice bots.",
+  "jambonz.meta": "Configuring and integrating Jambonz: SIP trunks, 3CX and voice AI with your own STT, TTS and LLM. Advice, configuration and support by Ruijs IT.",
+  "jambonz.pageTitle": "Jambonz configuration and support — Ruijs IT",
   "jambonz.lead": "The open source platform for programmable telephony and voice AI. We help with configuration, integrations and support.",
   "jambonz.p1": "Jambonz is an open source platform for programmable telephony: an alternative to services like Twilio that you can also run in your own environment. It connects to any SIP network and handles everything from SIP trunks to call routing and media processing.",
   "jambonz.p2": "That makes Jambonz a strong foundation for voice AI. You choose which speech recognition (STT), speech synthesis (TTS) and language model (LLM) to use, and can easily switch vendors when needed. Your data stays where you want it.",
@@ -132,7 +141,8 @@ window.RUIJSIT_EN = {
   "jambonz.ctaMailHref": "mailto:support@ruijsit.nl?subject=Question%20about%20Jambonz",
 
   /* ---------- FlowFuse & Node-RED ---------- */
-  "flowfuse.meta": "Node-RED and FlowFuse: build, manage and scale integrations and automations. Ruijs IT helps from first flow to production.",
+  "flowfuse.meta": "Integrations and automations with Node-RED, managed with FlowFuse: flows, teams, pipelines and the Device Agent. Advice, configuration and support by Ruijs IT.",
+  "flowfuse.pageTitle": "FlowFuse & Node-RED configuration and support — Ruijs IT",
   "flowfuse.lead": "Connect systems and automate processes with visual flows, and manage them professionally with FlowFuse.",
   "flowfuse.p1": "Node-RED is an open source low-code tool for connecting devices, APIs and online services. In a browser-based editor you drag blocks (nodes) onto a canvas and wire them together into a flow. That way you quickly build integrations and automations without programming everything yourself.",
   "flowfuse.p2": "FlowFuse is the platform around Node-RED. It adds what you need for production use: team collaboration, version control, staged deployments through DevOps pipelines, management of devices on site, and security with roles, SSO and audit logs.",
@@ -154,8 +164,8 @@ window.RUIJSIT_EN = {
   "flowfuse.ctaMailHref": "mailto:support@ruijsit.nl?subject=Question%20about%20FlowFuse%20%2F%20Node-RED",
 
   /* ---------- 3CX & VoIP support ---------- */
-  "support.meta": "Help with 3CX phone systems, VoIP tickets and questions about business telephony. For businesses and 3CX resellers.",
-  "support.pageTitle": "3CX & VoIP support — Ruijs IT",
+  "support.meta": "Help with installing, configuring and supporting 3CX phone systems, VoIP tickets for resellers, SIP trunks, number porting and call quality.",
+  "support.pageTitle": "3CX & VoIP support for businesses and resellers — Ruijs IT",
   "support.title": "3CX &amp; VoIP support",
   "support.lead": "Help with 3CX phone systems, VoIP tickets and all your questions about business telephony. For businesses and 3CX resellers alike.",
   "support.p1": "Do you need help installing, configuring or managing 3CX phone systems? Are you a 3CX reseller looking for help with VoIP tickets? Or do you simply have a question about business telephony? As a certified 3CX Advanced Engineer, we'll help you quickly and clearly.",
