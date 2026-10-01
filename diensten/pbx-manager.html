@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PBX Manager — Ruijs IT</title>
+  <meta name="description" content="PBX Manager: beheer en monitor al uw 3CX-servers vanuit één overzicht." data-i18n-content="pbx.meta">
+  <meta name="theme-color" content="#15181d">
+
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Naar de inhoud</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html">
+        <img src="../assets/logo/logo-white-v1.svg" alt="Ruijs IT" width="113" height="28">
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Hoofdmenu" data-i18n-aria-label="nav.label">
+        <ul>
+          <li><a href="../index.html#diensten" data-i18n="nav.services">Diensten</a></li>
+          <li><a href="../index.html#over-ons" data-i18n="nav.about">Over ons</a></li>
+          <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Taal" data-i18n-aria-label="lang.label">
+        <button type="button" data-lang="nl" aria-pressed="true" lang="nl" title="Nederlands">NL</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en" title="English">EN</button>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#diensten" data-i18n="nav.services">Diensten</a></li>
+          <li aria-current="page">PBX Manager</li>
+        </ol>
+        <span class="tag" data-i18n="pbx.status">In ontwikkeling</span>
+        <h1>PBX Manager</h1>
+        <p class="lead" data-i18n="pbx.lead">Een app om al uw 3CX-servers vanuit één plek te beheren en te monitoren, self-hosted in uw eigen infrastructuur.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="detail">
+          <div>
+            <p data-i18n="pbx.intro">PBX Manager is een app die wij ontwikkelen om al uw 3CX-servers te beheren en te monitoren. Geen losse logins en overzichten meer, maar één centrale plek.</p>
+            <p data-i18n="pbx.selfHosted">PBX Manager draait self-hosted in uw eigen infrastructuur. Uw gegevens en de toegang tot uw servers blijven dus bij u.</p>
+
+            <h2 data-i18n="pbx.whyTitle">Waarom PBX Manager?</h2>
+            <ul class="checklist">
+              <li data-i18n="pbx.why1">Gemakkelijk overzicht van al uw 3CX-servers</li>
+              <li data-i18n="pbx.why2">Monitor de status van uw 3CX-servers</li>
+              <li data-i18n="pbx.why3">Eén plek om alle servers te beheren</li>
+              <li data-i18n="pbx.why4">Stel aangepaste alertmeldingen in</li>
+              <li data-i18n="pbx.why5">Werk met aangepaste configuratietemplates</li>
+            </ul>
+
+            <p data-i18n="pbx.interest">PBX Manager is nog in ontwikkeling. Benieuwd hoe het werkt of wilt u op de hoogte blijven? Neem contact op.</p>
+          </div>
+
+          <aside class="facts">
+            <h2 data-i18n="svc.factsTitle">In het kort</h2>
+            <dl>
+              <div><dt>Status</dt><dd data-i18n="pbx.status">In ontwikkeling</dd></div>
+              <div><dt>Hosting</dt><dd data-i18n="pbx.factHosting">Self-hosted in uw eigen infrastructuur</dd></div>
+              <div><dt data-i18n="pbx.factWorksWith">Werkt met</dt><dd>3CX</dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="shots" data-tabs>
+          <h2 data-i18n="pbx.shotsTitle">Zo ziet het eruit</h2>
+          <div class="tabs" role="tablist" aria-label="Screenshots">
+            <button type="button" role="tab" id="tab-dashboard" aria-controls="shot-dashboard" aria-selected="true">Dashboard</button>
+            <button type="button" role="tab" id="tab-users" aria-controls="shot-users" aria-selected="false" tabindex="-1" data-i18n="pbx.tabUsers">Gebruikers</button>
+            <button type="button" role="tab" id="tab-eventlog" aria-controls="shot-eventlog" aria-selected="false" tabindex="-1" data-i18n="pbx.tabEventlog">Eventlog</button>
+          </div>
+
+          <figure class="shot" id="shot-dashboard" role="tabpanel" aria-labelledby="tab-dashboard">
+            <img src="../assets/img/pbxmanager-profile.png" width="1920" height="933"
+                 alt="Dashboard-overzicht van PBX Manager" data-i18n-alt="pbx.altDashboard">
+          </figure>
+          <figure class="shot" id="shot-users" role="tabpanel" aria-labelledby="tab-users" hidden>
+            <img src="../assets/img/pbxmanager-users.png" width="1920" height="933" loading="lazy"
+                 alt="Gebruikersoverzicht van PBX Manager" data-i18n-alt="pbx.altUsers">
+          </figure>
+          <figure class="shot" id="shot-eventlog" role="tabpanel" aria-labelledby="tab-eventlog" hidden>
+            <img src="../assets/img/pbxmanager-eventlog.png" width="1920" height="933" loading="lazy"
+                 alt="Eventlog-overzicht van PBX Manager" data-i18n-alt="pbx.altEventlog">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2 data-i18n="pbx.ctaTitle">Interesse in PBX Manager?</h2>
+            <p data-i18n="pbx.ctaText">Neem contact op als u meer wilt weten of op de hoogte wilt blijven van de ontwikkeling.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="mailto:support@ruijsit.nl?subject=Interesse%20in%20PBX%20Manager" data-i18n-href="pbx.ctaMailHref" data-i18n="cta.mail">Mail ons</a>
+            <a class="btn btn-outline" href="tel:+31103220365" data-i18n="cta.call">Bel ons</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Ruijs IT</p>
+      <p data-i18n="footer.reg">KVK 86996975 · BTW NL004338566B38</p>
+    </div>
+  </footer>
+</body>
+</html>
