@@ -47,6 +47,7 @@ window.RUIJSIT_EN = {
   "services.intro": "From 3CX and contact centres to voice AI and automation: we help you with telephony and everything connected to it.",
   "services.support": "Help with installing, configuring and managing 3CX phone systems, handling VoIP tickets for 3CX resellers, and answers to all your questions about business telephony.",
   "services.pbx": "An app to manage and monitor all your 3CX servers from one place, self-hosted in your own infrastructure.",
+  "services.jamhooks": "A visual call flow designer for Jambonz, like Node-RED and the 3CX Call Flow Designer. Easily build your call flows and IVRs.",
   "services.talkdesk": "AI-powered cloud contact centre for customer contact across voice and digital channels.",
   "services.jambonz": "Open source platform for programmable telephony and voice AI. We help with configuration and support.",
   "services.flowfuse": "Connect systems and automate processes with visual flows, from first test to production.",
@@ -91,6 +92,25 @@ window.RUIJSIT_EN = {
   "pbx.ctaTitle": "Interested in PBX Manager?",
   "pbx.ctaText": "Get in touch if you'd like to know more or stay informed about its development.",
   "pbx.ctaMailHref": "mailto:support@ruijsit.nl?subject=Interested%20in%20PBX%20Manager",
+
+  /* ---------- JamHooks ---------- */
+  "jamhooks.meta": "JamHooks is a visual call flow designer for Jambonz, like Node-RED and the 3CX Call Flow Designer. Easily build your call flows and IVRs. In development.",
+  "jamhooks.pageTitle": "JamHooks: visual call flow designer for Jambonz — Ruijs IT",
+  "jamhooks.status": "In development",
+  "jamhooks.lead": "A visual call flow designer for Jambonz. Easily build your call flows and IVRs, just like you're used to in Node-RED and the 3CX Call Flow Designer.",
+  "jamhooks.intro": "JamHooks is an app we are developing to design call flows for Jambonz visually. You place blocks on a canvas and wire them together into a call flow, just like in Node-RED or the 3CX Call Flow Designer.",
+  "jamhooks.ivr": "That makes it easy to set up phone menus (IVRs) and call flows for your Jambonz environment.",
+  "jamhooks.whyTitle": "Why JamHooks?",
+  "jamhooks.why1": "Design call flows visually on a canvas",
+  "jamhooks.why2": "Easily set up phone menus (IVRs)",
+  "jamhooks.why3": "A familiar way of working, like in Node-RED and the 3CX Call Flow Designer",
+  "jamhooks.why4": "Built specifically for Jambonz",
+  "jamhooks.interest": "JamHooks is still in development. Curious how it works, or want to stay informed? Get in touch.",
+  "jamhooks.factType": "Visual call flow designer",
+  "jamhooks.factWorksWith": "Works with",
+  "jamhooks.ctaTitle": "Interested in JamHooks?",
+  "jamhooks.ctaText": "Get in touch if you'd like to know more or stay informed about its development.",
+  "jamhooks.ctaMailHref": "mailto:support@ruijsit.nl?subject=Interested%20in%20JamHooks",
 
   /* ---------- Talkdesk ---------- */
   "talkdesk.meta": "Setting up and integrating Talkdesk: call flows, IVR, routing, SIP and CRM integrations such as Salesforce, Zendesk and HubSpot. Advice and support by Ruijs IT.",

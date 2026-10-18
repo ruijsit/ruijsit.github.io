@@ -276,7 +276,6 @@ a:hover { color: var(--text); }
 
 @media (min-width: 640px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
-  .card-wide { grid-column: span 2; }
 }
 
 @media (min-width: 960px) {
