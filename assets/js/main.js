@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Ruijs IT — site script
+   Ruijs IT - site script
    - Language switch (NL/EN). Dutch text lives in the HTML, English text in
      assets/js/i18n.js. Elements are linked by their data-i18n key.
    - Mobile menu, screenshot tabs, footer year.
