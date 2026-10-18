@@ -589,16 +589,30 @@ a:hover { color: var(--text); }
   font-size: .9rem;
 }
 
+/* © and KVK/BTW sit together on the left and the links never sit between
+   them, so nothing shifts when the KVK/BTW text changes language. */
 .footer-inner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   gap: 12px 24px;
 }
 
 .footer-inner p { margin: 0; }
-.footer-links { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.footer-reg { order: 1; flex-basis: 100%; }
+.footer-links { order: 2; flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 4px 16px; }
 .footer-links a { text-decoration: none; }
 .footer-inner a { color: var(--text-on-dark-muted); }
 .footer-inner a:hover { color: var(--orange); }
+
+@media (min-width: 640px) {
+  .footer-reg { flex-basis: auto; }
+}
+
+/* Desktop: one row, links on the right. 1140px keeps the container at full
+   width even with a scrollbar, so the row always gets the same space. */
+@media (min-width: 1140px) {
+  .footer-inner { flex-wrap: nowrap; }
+  .footer-inner p { flex-shrink: 0; }
+  .footer-links { flex-basis: auto; margin-left: auto; justify-content: flex-end; }
+}
