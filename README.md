@@ -8,7 +8,7 @@ Website of Ruijs IT. Plain HTML, CSS and JavaScript: no build step, no framework
 index.html                         One-page site: hero, services, about, contact
 diensten/3cx-voip-support.html     Service page: 3CX & VoIP support (with FAQ)
 diensten/pbx-manager.html          Service page: PBX Manager
-diensten/jamhooks.html             Service page: JamHooks
+diensten/jamhooks.html             Service page: Jamhooks
 diensten/talkdesk.html             Service page: Talkdesk
 diensten/jambonz.html              Service page: Jambonz
 diensten/flowfuse-node-red.html    Service page: FlowFuse & Node-RED
